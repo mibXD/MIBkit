@@ -1,5 +1,5 @@
 # MIBkit
-A shell for tools coded by me!
+A shell for all tools coded by me.
 
 
 # ⚙️ Tools
