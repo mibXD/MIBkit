@@ -12,3 +12,6 @@ $$$$$$$$"$$$ $$$ $$''''Y$$
 MMM  M'  "MMMMMM""YUMMMP"
 
       ToolKit v1.0""")
+
+while True:
+ input('>> ')
