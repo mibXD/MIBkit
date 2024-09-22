@@ -6,6 +6,5 @@ A shell for all tools coded by me.
 - Port Scanning
 - Key logger
 - Email Bomber
-- Ransomware
 - Dns Resolver
-- Remonte Acesso Trojan
+- Track Phone Number
