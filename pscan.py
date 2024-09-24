@@ -1,7 +1,3 @@
-import socket
-import queue
-import threading
-
 def Pscan():
 
         # Imports
