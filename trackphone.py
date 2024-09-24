@@ -1,11 +1,8 @@
-import time
+def Tracker():
 
 
-
-def track_phone():
+        import time
 
 
         print('Ok')
         time.sleep(0.5)
-
-track_phone()
