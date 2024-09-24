@@ -1,39 +1,50 @@
-import os                                               
+import os
 import sys
 import time
-                                                                                                                
-def port_scan():                                        
-                                                                
-        scan_command = f'python3 /data/data/com.termux/files/home/MIBkit/modulos/pscan.py'                              
+
+
+def port_scan():
+
+
+        scan_command = f'python3 /data/data/com.termux/files/home/MIBkit/pscan.py'
         os.system(scan_command)
-                                                        
+
+
 def track_phone():
 
-                                                                
+
         track_phone_command = f'python3 /data/data/com.termux/files/home/MIBkit/modulos/trackphone.py'
         os.system(track_phone_command)
 
-
-while True:
-        inp = input('>> ')
+def main_console():
 
 
-        if inp == 'exit':
-                print('Bye :D')
-                time.sleep(1.0)
-                break
+        from pscan import Pscan
 
-        elif inp == 'ls':
-                list = os.listdir('/data/data/com.termux/files/home/MIBkit/modulos')
-                print('~ Tools')
-                print(list)
 
-        if inp == 'use':
-                print('! RESOLVE LOGO ESSA PORRA')
-                print('%s'(sys.argv[1]))
+        while True:
+                inp = input('>> ')
 
-        elif inp == 'pscan':
-                port_scan()
 
-        elif inp == 'trackphone':
-                track_phone()
+                if inp == 'exit':
+                        print('Bye :D')
+                        time.sleep(1.0)
+                        break
+
+                elif inp == 'ls':
+                        list = os.listdir('/data/data/com.termux/files/home/MIBkit/modulos')
+                        print('~ Tools')
+                        print(list)
+
+                if inp == 'use':
+                        print('! RESOLVE LOGO ESSA PORRA')
+                        print('%s'(sys.argv[1]))
+
+                #elif inp == 'pscan':
+                #       port_scan()
+                elif inp == 'pscan':
+                        Pscan()
+
+                elif inp == 'trackphone':
+                        track_phone()
+main_console()
