@@ -39,6 +39,9 @@ dnsr\n""")
                 elif inp == 'trackphone':
                         Tracker()
 
+                elif inp == 'dnsr':
+                        DNSResolver()
+
 
 # Exec console
 main_console()
