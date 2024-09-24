@@ -16,5 +16,8 @@ def Tracker():
         query = str(location)
         results = gcoder.geocode(query)
 
+        lat = results[0]['geometry']['lat']
+        lng = results[0]['geometry']['lng']
 
-        print(location, results)
+        print(f'''State: {location}
+Latitude & longitude: {lat, lng}''')
