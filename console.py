@@ -1,6 +1,7 @@
 # Main console function
 def main_console():
 
+
         # Imports
         import os
         import sys
@@ -9,6 +10,7 @@ def main_console():
         # Tool function import
         from pscan import Pscan
         from trackphone import Tracker
+        from dnsr import DNSResolver
 
 
         # Console
@@ -27,12 +29,13 @@ pscan
 trackphone
 dnsr\n""")
 
+                elif inp == 'clear':
+                        os.system('clear')
+
                 elif inp == 'use':
                         print('! RESOLVE LOGO ESSA PORRA')
                         print('%s'(sys.argv[1]))
 
-                #elif inp == 'pscan':
-                #       port_scan()
                 elif inp == 'pscan':
                         Pscan()
 
