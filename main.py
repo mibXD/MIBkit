@@ -8,6 +8,7 @@ import time
 # Import tools
 import pscan
 import trackphone
+import dnsr
 
 
 # Banner
