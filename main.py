@@ -23,12 +23,17 @@ def Banner():
 
 Banner()
 
+
+import pscan
+from console import main_console
+
+
 # Import console
-def main_console():
+#def main_console():
 
 
-        run_console_command = f'python3 /data/data/com.termux/files/home/MIBkit/console.py'
-        os.system(run_console_command)
+#       run_console_command = f'python3 /data/data/com.termux/files/home/MIBkit/console.py'
+#       os.system(run_console_command)
 
 
-main_console()
+#main_console()
