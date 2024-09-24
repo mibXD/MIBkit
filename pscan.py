@@ -4,15 +4,23 @@ import threading
 
 def Pscan():
 
+        # Imports
+        import socket
+        import queue
+        import threading
 
+        
         ip = input("# Target ip: ")
+        # Queue list
         q = queue.Queue()
 
 
+        # Add ports in queue
         for i in range(1, 65536):
                 q.put(i)
 
 
+        # Scan script
         def scan():                                     
 
                 while not q.empty():
@@ -27,7 +35,7 @@ def Pscan():
                                         pass
                         q.task_done()
 
-
+        # Create threads
         for i in range(50):
 
 
@@ -35,5 +43,6 @@ def Pscan():
                 t.start()
 
 
+        # Finish
         q.join()
         print('\nfinished :D')
