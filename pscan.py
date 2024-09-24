@@ -5,7 +5,7 @@ import threading
 def Pscan():
 
 
-        ip = input(" Target ip: ")
+        ip = input("# Target ip: ")
         q = queue.Queue()
 
 
