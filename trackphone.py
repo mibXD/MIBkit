@@ -25,5 +25,9 @@ def Tracker():
         lng = results[0]['geometry']['lng']
 
 
-        print(f'''State: {location}
-Latitude & longitude: {lat, lng}''')
+        print(f'''
+State: {location}
+Latitude & longitude: {lat, lng}
+
+All Results: {results}
+''')
